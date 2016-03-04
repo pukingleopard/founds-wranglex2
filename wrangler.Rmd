@@ -23,7 +23,7 @@ mydata <- tbl_df(read.csv("titanic_original.csv", header = TRUE))
 ## 1: Port of embarkation
 The embarked column has one missing value, which is known to correspond to a passenger who actually embarked at Southampton. Find the missing value and replace it with S.
 
-**jch> I noted during the exercise that there were actually two individuals missing a value in the embarkation column**
+**jch> I noted during the exercise that there were actually two individuals missing a value in the embarkation column and I manually removed the row of empty values at the bottom of the input file.**
 ```{r}
 count(filter(mydata, embarked == ""))
 ```
